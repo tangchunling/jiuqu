@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="app.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+	</head>
+	<body>
+		<header>
+			<a>
+				<img src="images/index/menubutton.png" alt="" />
+			</a>
+			<a>
+				<img src="images/index/logo.png" alt="" />
+			</a>
+		</header>
+		
+		<nav>
+			<div class="swiper-container">
+		        <ul class="swiper-wrapper">
+		            <li class="swiper-slide"><a href="index.html">首页</a></li>
+		            <li class="swiper-slide nav_active"><a href="product.html">产品介绍</a></li>
+		            <li class="swiper-slide"><a href="activity.html">酒趣动态</a></li>
+		            <li class="swiper-slide"><a href="about.html">关于我们</a></li>
+		            <li class="swiper-slide"><a href="join.html">加入我们</a></li>
+		            <li class="swiper-slide"><a href="faq.html">FAQ</a></li>
+		        </ul>
+		    </div>
+		</nav>
+	
+		<div class="container">
+			<div class="pro1">
+				<img src="images/product/top.png" alt="" />
+			</div>
+			<div class="pro2">
+				<h1>酒趣·手机酒铺</h1>
+				<img src="images/product/iphone.png" alt="" />
+			</div>
+			<div class="pro3">
+				<ul>
+					<li>
+						<img src="images/product/icon1.png" alt="" />
+						<p>店铺移动起来，24小时不打烊</p>
+					</li>
+					<li>
+						<img src="images/product/icon2.png" alt="" />
+						<p>分类展示，货架无线延伸</p>
+					</li>
+					<li>
+						<img src="images/product/icon3.png" alt="" />
+						<p>店铺广告，明星商品全力推广</p>
+					</li>
+				</ul>
+			</div>
+			<div class="pro2 grey">
+				<h1>酒趣·移动管理APP</h1>
+				<img src="images/product/iphone_2.png" alt="" />
+			</div>
+			<div class="pro3 grey">
+				<ul>
+					<li>
+						<img src="images/product/icon4.png" alt="" />
+						<p>商品/订单/会员/活动</p>
+						<p>数据一目了然</p>
+					</li>
+					<li>
+						<img src="images/product/icon5.png" alt="" />
+						<p>手机采购进货</p>
+						<p>快捷下单</p>
+					</li>
+					<li>
+						<img src="images/product/icon6.png" alt="" />
+						<p>专属门店二维码</p>
+						<p>一键粉丝分享</p>
+					</li>
+				</ul>
+			</div>
+			<div class="pro2">
+				<h1>酒趣·云管理中心</h1>
+				<img src="images/product/pc.png" alt="" />
+			</div>
+			<div class="pro4">
+				<div class="item">
+					<span>商品管理</span><span>订单管理</span><span>客户管理</span>
+				</div>
+				<div class="item">
+					<span>活动管理</span><span>数据统计</span><span>卡券管理</span>
+				</div>				
+						
+			</div>
+		</div>
+		<footer>
+			杭州酒趣科技有限公司版权所有©2015-2016
+		</footer>
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		
+		 <script>
+		     $(function(){
+		    	$("header a:first-child").click(function(){
+			 		$("nav").slideToggle();
+			 		var swiper = new Swiper('.swiper-container', {
+				        pagination: '.swiper-pagination',
+				        slidesPerView: 'auto',
+				    });
+			 	});
+		    })   
+	    </script>
+	</body>
+</html>

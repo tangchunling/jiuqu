@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="app.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+	</head>
+	<body>
+		<header>
+			<a>
+				<img src="images/index/menubutton.png" alt="" />
+			</a>
+			<a>
+				<img src="images/index/logo.png" alt="" />
+			</a>
+		</header>
+		
+		<nav>
+			<div>
+				<div class="swiper-container">
+			        <ul class="swiper-wrapper">
+			            <li class="swiper-slide  nav_active"><a href="index.html">首页</a></li>
+			            <li class="swiper-slide"><a href="product.html">产品介绍</a></li>
+			            <li class="swiper-slide "><a href="activity.html">酒趣动态</a></li>
+			            <li class="swiper-slide"><a href="about.html">关于我们</a></li>
+			            <li class="swiper-slide"><a href="join.html">加入我们</a></li>
+			            <li class="swiper-slide"><a href="faq.html">FAQ</a></li>
+			        </ul>
+			    </div>
+			</div>	
+		</nav>
+	
+	<div class="container">
+		<div class="list1">
+			<h1>用酒趣<br>手机卖酒更容易</h1>
+			<p>让酒商群体更智慧，让酒水生态更有趣</p>
+			<img src="images/index/iphone1.png" alt="" />
+			<div class="list1-btn">
+				<a href="https://itunes.apple.com/cn/app/jiuqu/id1090283633?ls=1&mt=8"><span><img src="images/index/OS_Apple.png" alt="" />下载iPhone版</span></a>
+				<a href="http://dd.myapp.com/16891/408634D6CB6E6C0BEB1C1F66CEEA599B.apk?fsname=com.sunday.wine_1.2_2.apk"><span><img src="images/index/android.png" alt="" />下载Android版</span></a>
+			</div>
+		</div>
+		<div class="list2 list3">
+			<h1>酒趣·手机酒铺</h1>
+			<p>顾客手机里的智慧洒水门店</p>
+			<img src="images/index/iphone_1.png" alt="" id="animationSandbox1"/>
+		</div>
+		<div class="list2">
+			<h1>酒趣·移动管理APP</h1>
+			<p>解放经营者，生意随身管理</p>
+			<p>解放酒老板，生意随身行</p>
+			<p>随时随地，移动管理</p>
+			<img src="images/index/iphone_2.png" alt="" id="animationSandbox2"/>
+		</div>
+		
+		<div class="list4">
+			<h1>酒趣·云管理中心</h1>
+			<p>强大高效，专注洒水行业</p>
+			<p>专注酒水行业，降低管理成本</p>
+			<p>云端管理，强大高效</p>
+			<img src="images/index/pc.png" alt="" id="animationSandbox3"/>
+		</div>
+		
+		<div class="list5">
+			<h1>专注洒水行业<br>针对实体酒商升级</h1>
+			<ul>
+				<li>
+					<img src="images/index/icon6.png" alt="" /><span>手机完成传统交易</span>
+				</li>
+				<li>
+					<img src="images/index/icon4.png" alt="" /><span>拓展网络销售渠道</span>
+				</li>
+				<li>
+					<img src="images/index/icon5.png" alt="" /><span>社交营销模式升级</span>
+				</li>
+				<li>
+					<img src="images/index/icon1.png" alt="" /><span>高效经营管理系统</span>
+				</li>
+				<li>
+					<img src="images/index/icon2.png" alt="" /><span>店铺顾客互动玩法</span>
+				</li>
+				<li>
+					<img src="images/index/icon3.png" alt="" /><span>贴心完善技术支持</span>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="list6">
+			<div class="code">
+				<img src="images/index/code.png" alt="" />
+				<p>扫描关注酒趣科技</p>
+			</div>
+			<h1>酒·由我·有趣</h1>
+			<div class="list6-btn">
+				<span id="load">下载酒趣APP></span>
+			</div>
+		</div>
+	</div>
+		<div class="mask">
+			
+		</div>
+		<footer>
+			杭州酒趣科技有限公司版权所有©2015-2016
+		</footer>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+		
+		<script>
+		  function testAnim(x,id) {
+		    $(id).removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		      $(this).removeClass();
+		    });
+		  };
+		
+		  $(document).ready(function(){
+		   var isFirst1 = true;
+	   		var isFirst2 = true;
+	   		var isFirst3 = true;
+		   $(window).scroll(function(){
+		   		
+		   		var height = $(document).scrollTop()+$(window).height();
+		   		if(height >= $("#animationSandbox1").offset().top){
+		   			if(isFirst1){
+		   				testAnim("fadeInUp","#animationSandbox1");
+		   				isFirst1 = false;
+		   			}	
+		   		}
+		   		if(height >= $("#animationSandbox2").offset().top){
+		   			if(isFirst2){
+		   				testAnim("fadeInUp","#animationSandbox2");
+		   				isFirst2 = false;
+		   			}	
+		   		}
+		   		if(height >= $("#animationSandbox3").offset().top){
+		   			if(isFirst3){
+		   				testAnim("zoomIn","#animationSandbox3");
+		   				isFirst3 = false;
+		   			}	
+		   		}
+		   })
+		  });
+		</script>
+		 <script>
+		    $(function(){
+		    	$("header a:first-child").click(function(){
+			 		$("nav").slideToggle();
+			 		var swiper = new Swiper('.swiper-container', {
+				        pagination: '.swiper-pagination',
+				        slidesPerView: 'auto',
+				    });
+			 	});
+			 	
+			 	//判断访问终端
+				var browser={
+				    versions:function(){
+				        var u = navigator.userAgent, app = navigator.appVersion;
+				        return {
+				            trident: u.indexOf('Trident') > -1, //IE内核
+				            presto: u.indexOf('Presto') > -1, //opera内核
+				            webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+				            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+				            mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+				            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+				            android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+				            iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+				            iPad: u.indexOf('iPad') > -1, //是否iPad
+				            webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+				            weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+				            qq: u.match(/\sQQ/i) == " qq" //是否QQ
+				        };
+				    }(),
+				    language:(navigator.browserLanguage || navigator.language).toLowerCase()
+				}
+				$("#load").click(function(){
+					if(browser.versions.mobile && browser.versions.weixin){
+						$(".mask").show();
+					}
+					else if(browser.versions.mobile && browser.versions.android){
+						window.location.href = "http://dd.myapp.com/16891/408634D6CB6E6C0BEB1C1F66CEEA599B.apk?fsname=com.sunday.wine_1.2_2.apk";
+					}
+					else if(browser.versions.mobile && browser.versions.ios){
+						window.location.href = "https://itunes.apple.com/cn/app/jiuqu/id1090283633?ls=1&mt=8";
+					}
+				})
+				
+		    })   
+	    </script>
+	</body>
+</html>

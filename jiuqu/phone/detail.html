@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="app.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+	</head>
+	<body>
+		<header>
+			<a>
+				<img src="images/index/menubutton.png" alt="" />
+			</a>
+			<a>
+				<img src="images/index/logo.png" alt="" />
+			</a>
+		</header>
+		
+		<nav>
+			<div class="swiper-container">
+		        <ul class="swiper-wrapper">
+			            <li class="swiper-slide  "><a href="index.html">首页</a></li>
+			            <li class="swiper-slide"><a href="product.html">产品介绍</a></li>
+			            <li class="swiper-slide nav_active"><a href="activity.html">酒趣动态</a></li>
+			            <li class="swiper-slide"><a href="about.html">关于我们</a></li>
+			            <li class="swiper-slide"><a href="join.html">加入我们</a></li>
+			            <li class="swiper-slide "><a href="faq.html">FAQ</a></li>
+			        </ul>
+		    </div>
+		</nav>
+	
+		<div class="container">
+			<article>
+				<h1>【酒趣讲营销】酒老板在移动互联时代该如何生存？</h1>
+				<div class="detail_time">
+					2016.02.01 酒趣科技
+				</div>
+				<div class="detail_content">
+					<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+					<img src="" alt="" />
+				</div>
+			</article>
+			<div class="page">
+					<div class="page_left">
+						<img src="images/left.png" alt="" />
+					</div>
+					<div class="page_right">
+						<img src="images/right.png" alt="" />
+					</div>
+			</div>
+		</div>
+		<footer>
+			杭州酒趣科技有限公司版权所有©2015-2016
+		</footer>
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		
+		 <script>
+		 	
+		     $(function(){
+		    	$("header a:first-child").click(function(){
+			 		$("nav").slideToggle();
+			 		var swiper = new Swiper('.swiper-container', {
+				        pagination: '.swiper-pagination',
+				        slidesPerView: 'auto',
+				    });
+			 	});
+		    })   
+	    </script>
+	</body>
+</html>
